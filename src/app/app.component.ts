@@ -18,7 +18,15 @@ export class AppComponent {
   secondo_cerchio: any;
   secondo_cerchio_pos: any;
   secondo_cerchio_laber: string;
-  secondoCerchioOptions: {fillColor: 'blue'};
+  secondoCerchioOptions: {fillColor: string};
+
+  public colori:Array<string> = ['yellow', 'black', 'blue'];
+
+  public cambiaColore(colore:string) {
+    this.circleOptions = {fillColor: colore}
+    this.secondoCerchioOptions = {fillColor: colore}
+  }
+
   constructor()
   {
     this.center={lat: 45.506738, lng: 9.190766};

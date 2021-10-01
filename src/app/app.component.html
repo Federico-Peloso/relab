@@ -14,4 +14,9 @@
               [radius]="50"
               [options] = 'secondoCerchioOptions'>
   </map-circle>
+
+<button
+*ngFor="let colore of colori"
+(click)="cambiaColore(colore)">{{colore}}</button>
+
 </google-map>
