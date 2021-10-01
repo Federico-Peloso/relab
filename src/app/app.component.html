@@ -5,6 +5,13 @@
   <map-marker [position]="position" [label]="label" [title]="title">
   </map-marker>
 
-  <map-marker [position]="casa_mia_pos" [label]="casa_label" [title]="title">
-  </map-marker>
+  <map-circle [center]="position"
+              [radius]="50"
+              [options] = 'circleOptions'>
+  </map-circle>
+
+  <map-circle [center]="secondo_cerchio_pos"
+              [radius]="50"
+              [options] = 'secondoCerchioOptions'>
+  </map-circle>
 </google-map>
