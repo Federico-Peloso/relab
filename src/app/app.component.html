@@ -1,6 +1,6 @@
 {{title}}
 <!--Centriamo la mappa alle nostre coordinate-->
-<google-map [center]="center">  
+<google-map [zoom]="14" [center]="center">  
   <!--Mettiamo un marker alle nostre coordinate-->
   <map-marker [position]="position" [label]="label" [title]="title">
   </map-marker>
@@ -14,6 +14,20 @@
               [radius]="50"
               [options] = 'secondoCerchioOptions'>
   </map-circle>
+
+  <map-marker [position]="position" 
+  [label]="gatto_label" 
+  [title]="title"
+  [options] = "markerOptions">
+</map-marker>
+
+<map-marker *ngFor="let e of imgs"
+[title]="title"
+[options] = "e">
+</map-marker>
+
+<map-polygon [paths]="vertices">
+</map-polygon>
 
 <button
 *ngFor="let colore of colori"
