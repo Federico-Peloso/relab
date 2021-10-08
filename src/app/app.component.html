@@ -29,8 +29,19 @@
 <map-polygon [paths]="vertices">
 </map-polygon>
 
+<map-polygon [paths]="rectangle"
+[options]="rectangleOptions">
+</map-polygon>
+
 <button
 *ngFor="let colore of colori"
 (click)="cambiaColore(colore)">{{colore}}</button>
+
+<br />
+<br />
+
+<button
+*ngFor="let colore of colori"
+(click)="cambiaColoreRettangolo(colore)">{{colore}} del rettangolo</button>
 
 </google-map>

@@ -28,10 +28,16 @@ export class AppComponent {
   public colori:Array<string> = ['yellow', 'black', 'blue'];
 
   vertices: google.maps.LatLngLiteral[];
+  rectangle: google.maps.LatLngLiteral[];
+  rectangleOptions: {fillColor: string};
 
   public cambiaColore(colore:string) {
     this.circleOptions = {fillColor: colore}
     this.secondoCerchioOptions = {fillColor: colore}
+  }
+
+  public cambiaColoreRettangolo(colore:string) {
+    this.rectangleOptions = {fillColor: colore}
   }
 
   constructor()
@@ -43,7 +49,7 @@ export class AppComponent {
     this.casa_mia = {lat: 45.517940, lng: 9.186850};
     this.casa_mia_pos = this.casa_mia;
     this.casa_label = 'casa mia';
-    this.circleOptions = {fillColor: 'red'};
+    this.circleOptions = {fillColor: 'red'}
 
     this.secondo_cerchio = {lat: 45.506778, lng: 9.190266}
     this.secondo_cerchio_pos = this.secondo_cerchio
@@ -81,6 +87,15 @@ export class AppComponent {
       {  lat: this.center.lat, lng: this.center.lng },
       {  lat: this.center.lat - 0.001, lng: this.center.lng - 0.002}
     ];
+
+    this.rectangle = [
+      {  lat: this.center.lat + 0.001, lng: this.center.lng + 0.002},
+      {  lat: this.center.lat + 0.001, lng: this.center.lng + 0.001},
+      {  lat: this.center.lat - 0.001, lng: this.center.lng + 0.001},
+      {  lat: this.center.lat - 0.001, lng: this.center.lng + 0.002}
+    ];
+
+    this.rectangleOptions = {fillColor: 'green'}
 
   }
 
