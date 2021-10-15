@@ -1,0 +1,18 @@
+1) all’interno dell’oggetto vediamo le proprietà type, geometry e properties.
+All’interno della proprietà geometry c’è un oggetto che a sua volta ha le proprietà type e coordinates (un vettore)
+
+2) con due parentesi quadre ['ciao', 'dopo']
+
+3) let oggetto = {'vettore': ['ciao', 'dopo']}
+
+4) let mucca = {
+'zampe': 4,
+'occhi': 2,
+'coda': 1,
+'ali': 0
+}
+
+let coccodrillo = {
+'denti': 'tanti',
+'bello': false
+}
