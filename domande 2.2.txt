@@ -1,0 +1,78 @@
+1) Cosa puoi scrivere nella proprietà type della classe Geometry?
+
+	Il tipo di geometria da assegnare, solitamente 'string'.	
+
+
+2) Cosa puoi scrivere nella proprietà coordinates della classe Geometry?
+
+	Le coordinate geografiche.
+
+
+
+3) Cosa puoi scrivere nella proprietà type della classe GeoJson? 
+
+	GeoJSON supporta i seguenti tipi: Point , LineString , Polygon , MultiPoint , MultiLineString, e MultiPolygon.
+
+
+
+
+4) Cosa contiene il campo geometry della classe GeoJson?
+
+	contiene la geometria, per esempio type: 'Point', 'Coordinates': [coordinate]
+
+
+
+3) fatta nel codice
+
+
+
+4) A cosa serve il decoratore @ViewChild?
+
+	Il decoratore @ViewChild ci consente di iniettare in una classe di componenti riferimenti a elementi utilizzati all'interno del suo modello.
+
+
+
+5) Come faccio ad ottenerlo?
+
+	import { ViewChild } from '@angular/core'
+
+
+
+
+6) A cosa serve il parametro zoom del componente <google-map>?
+
+	A impostare uno zoom iniziale della mappa visualizzata nel iframe.
+
+
+
+7) Spiega le seguenti righe di codice:  
+
+
+    let newColor = "#FF0000"; //RED
+    if(feature.i.id == 0) newColor = "#00FF00"; //GREEN
+    else newColor = "#0000FF"; //BLUE
+    return ({
+      clickable: false,
+      fillColor: newColor,
+      strokeWeight: 1
+    });
+
+la variabile newColor contiene il colore rosso, se la chiave 'id' dell'oggetto passato come parametro alla funzione styleFunc è uguale a 0 allora newColor sarà verde, altrimenti sarà blu. Infine, la funzione ritorna un oggetto con le proprietà indicate, tra le quali 'fillColor', che come valore avrà 'newColor'.
+
+
+
+8) Nell’esercizio viene riempito il vettore di marker creando un marker alla volta, questo sarebbe un problema nel caso avessimo molti marker sapresti farlo con un ciclo for o for-of?
+
+    this.markerList = []
+
+    for (let feature of  this.geoJsonObject.features) {
+
+      this.markerList.push({
+        position : {
+          lng : feature.geometry.coordinates[0][0][0],
+          lat : feature.geometry.coordinates[0][0][1]
+        },
+        label: String(feature.properties.id),
+      })
+
+    }
