@@ -1,5 +1,5 @@
 {
-  "name": "angular-maps",
+  "name": "geoson-project",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -15,7 +15,7 @@
     "@angular/compiler": "~12.2.0",
     "@angular/core": "~12.2.0",
     "@angular/forms": "~12.2.0",
-    "@angular/google-maps": "^12.2.8",
+    "@angular/google-maps": "^12.2.9",
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
