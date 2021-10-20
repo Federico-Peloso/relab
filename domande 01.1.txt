@@ -1,0 +1,46 @@
+
+
+1) Qual è il tag che ti permette di visualizzare un cerchio?
+
+	<map-circle></map-circle>
+
+
+
+2) Quali parametri vengono passati al tag per il cerchio?
+
+	[center], rappresenta la posizione
+        [radius], rappresenta il raggio
+        [options], rappresenta le caratteristiche grafiche
+
+
+
+3) Qual è il tag che ti permette di visualizzare un marker?
+
+	 <map-marker></map-marker>
+
+
+
+4) Quali parametri vengono passati al marker in questo esercizio?
+
+	[position], rappresenta la posizione
+        [options], rappresenta le caratteristiche grafiche
+	[label], rappresenta il nome del marker
+	[title], per mostrare il titolo quando si pone il cursore al di sopra
+
+
+
+5) Quali attributi sono indicati nell’oggetto iconData?
+
+	l'url dell'icona e la dimensione
+
+
+
+6) Qual è il tag che ti permette di visualizzare un poligono?
+
+	<map-polygon></map-polygon>
+
+
+
+7) Quali parametri vengono passati al poligono in questo esercizio?
+
+	i vertici del poligono
