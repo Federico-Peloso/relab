@@ -1,0 +1,40 @@
+1) A quale località fanno riferimento latitudine e longitudine?
+
+	All'istituto tecnico industriale Luigi Galvani
+
+
+
+2) Sei in grado di aggiungere un altro marker che indica casa tua?
+
+	Fatto
+
+
+
+3) Come si aggiunge la libreria google-maps al progetto?
+
+	import { GoogleMapsModule } from '@angular/google-maps'
+
+
+
+
+4) Come si fornisce la chiave di google maps alla libreria?
+
+	attraverso lo script: <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+
+
+
+5) Qual è il tag che visualizza la mappa?
+
+	<google-map></google-map>
+
+
+
+6) Come si centra la mappa rispetto a latitudine e longitudine?
+
+	attraverso l'attributo [center]="coordinate"
+
+
+
+7) Come si aggiunge un marker?
+
+	attraverso il tag <map-marker></map-marker>
