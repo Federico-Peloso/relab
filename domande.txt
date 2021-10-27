@@ -1,0 +1,38 @@
+1) Come si raggiunge uno specifica collection su MongoDB?
+
+	- Dopo essersi connessi al database tramite la stringa di connessione, la collection si raggiunge con il seguente codice: connessione.database.collection
+
+
+
+
+2) Che tipo di struttura dati ritorna una find? (nota che è un oggetto ciclabile)
+
+	- Una find ritorna i documenti che rispettano i criteri (se presenti) specificati nella find, in python gli oggetti vengono rappresentati come dizionari.
+
+
+
+
+3) La variabile s contiene ogni cella dell'iterazione del ciclo. Che tipo di struttura dati contiene la variabile s? (nota che può essere acceduta con la notazione []
+
+	- La variabile S contiene un oggetto, siccome rappresenta un elemento della lista contenente i risultati della query effettuata al database.
+
+
+
+
+4) Se dovessi ottenere altri dati oltre all'indirizzo come faresti?
+
+	- Al posto di s['INDIRIZZO'] metterei s['quello_che_voglio_vedere']
+
+
+
+
+5) A cosa corrisponde il codice find({"FOGLIO":foglio}) in SQL?
+
+	- Corrisponde a SELECT * FROM MilWKT4326 WHERE FOGLIO = foglio
+
+
+
+
+6) Come si crea una variabile che conterrà il valore specificato nell'URL del browser?
+
+	- Nell'app.route si scrive /<vairabile>
